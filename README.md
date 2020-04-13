@@ -12,5 +12,5 @@ go run sweep.go
 Delete all branches except foo.
 
 ```sh
-go run sweep.go -except foo
+go run sweep.go -exclude foo
 ```
