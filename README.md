@@ -5,7 +5,7 @@ Delete all branches except the specified branch.
 ## Installation
 
 ```sh
-go get -u github.com/yuzoiwasaki/sweep
+go get github.com/yuzoiwasaki/sweep
 ```
 
 ## Usage
