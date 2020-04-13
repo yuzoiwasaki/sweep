@@ -1,16 +1,23 @@
-# branch-sweeper
+# sweep
+
 Delete all branches except the specified branch.
+
+## Installation
+
+```sh
+go get -u github.com/yuzoiwasaki/sweep
+```
 
 ## Usage
 
 Delete all branches except master.
 
 ```sh
-go run sweep.go
+sweep
 ```
 
 Delete all branches except foo.
 
 ```sh
-go run sweep.go -exclude foo
+sweep -exclude foo
 ```
