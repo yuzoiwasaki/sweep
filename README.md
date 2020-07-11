@@ -11,8 +11,7 @@ go get github.com/yuzoiwasaki/sweep
 or
 
 ```sh
-git clone https://github.com/yuzoiwasaki/sweep
-mv sweep/bin/sweep /usr/local/bin/
+curl -o /usr/local/bin/sweep https://github.com/yuzoiwasaki/sweep/blob/master/bin/sweep
 ```
 
 ## Usage
