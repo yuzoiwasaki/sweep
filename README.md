@@ -21,3 +21,9 @@ Delete all branches except foo.
 ```sh
 sweep -exclude foo
 ```
+
+Delete all branches except master, foo.
+
+```sh
+sweep -exclude master -exclude foo
+```
