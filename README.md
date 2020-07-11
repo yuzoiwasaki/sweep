@@ -8,6 +8,13 @@ Delete all branches except the specified branch.
 go get github.com/yuzoiwasaki/sweep
 ```
 
+or
+
+```sh
+git clone https://github.com/yuzoiwasaki/sweep
+mv sweep/bin/sweep /usr/local/bin/
+```
+
 ## Usage
 
 Delete all branches except master.
