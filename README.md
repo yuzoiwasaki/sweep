@@ -25,11 +25,11 @@ sweep
 Delete all branches except foo.
 
 ```sh
-sweep -exclude foo
+sweep -v foo
 ```
 
 Delete all branches except master, foo.
 
 ```sh
-sweep -exclude master -exclude foo
+sweep -v master -v foo
 ```
