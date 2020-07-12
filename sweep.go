@@ -20,7 +20,7 @@ func (s *strslice) Set(v string) error {
 var multiflag = strslice{"master"}
 
 func main() {
-	flag.Var(&multiflag, "exclude", "Set exclude branch")
+	flag.Var(&multiflag, "exclude", "Specify the branch you want to exclude")
 	flag.Parse()
 
 	var excludeCmd string
