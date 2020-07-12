@@ -17,11 +17,15 @@ func (s *strslice) Set(v string) error {
 	return nil
 }
 
-var multiflag = strslice{"master"}
+var multiflag strslice
 
 func main() {
 	flag.Var(&multiflag, "v", "Specify the branch you want to exclude")
 	flag.Parse()
+
+	if len(multiflag) == 0 {
+		multiflag = append(multiflag, "master")
+	}
 
 	var b, e string
 
