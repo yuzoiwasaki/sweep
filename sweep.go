@@ -23,12 +23,13 @@ func main() {
 	flag.Var(&multiflag, "v", "Specify the branch you want to exclude")
 	flag.Parse()
 
-	var excludeCmd string
+	var b, e string
 
 	for _, s := range multiflag {
-		excludeCmd = excludeCmd + " | grep -v " + s
+		b = s
+		e = e + " | grep -v " + s
 	}
-	cmdstr := "git branch" + excludeCmd + " | xargs git branch -D"
+	cmdstr := "git checkout " + b + " && git branch" + e + " | xargs git branch -D"
 
 	err := exec.Command("sh", "-c", cmdstr).Run()
 	if err != nil {
