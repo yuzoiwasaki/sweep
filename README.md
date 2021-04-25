@@ -17,7 +17,7 @@ curl -fLo /usr/local/bin/sweep \
 
 ## Usage
 
-Delete all branches except master.
+Delete all branches except main.
 
 ```sh
 sweep
@@ -29,8 +29,8 @@ Delete all branches except foo.
 sweep -v foo
 ```
 
-Delete all branches except master, foo.
+Delete all branches except main, foo.
 
 ```sh
-sweep -v master -v foo
+sweep -v main -v foo
 ```

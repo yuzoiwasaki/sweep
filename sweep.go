@@ -24,7 +24,7 @@ func main() {
 	flag.Parse()
 
 	if len(multiflag) == 0 {
-		multiflag = append(multiflag, "master")
+		multiflag = append(multiflag, "main")
 	}
 
 	var b, e string
