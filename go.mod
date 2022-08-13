@@ -1,3 +1,3 @@
-module yuzoiwasaki/sweep
+module github.com/yuzoiwasaki/sweep
 
 go 1.16
