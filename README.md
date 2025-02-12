@@ -14,6 +14,7 @@ or
 curl -fLo /usr/local/bin/sweep \
     https://github.com/yuzoiwasaki/sweep/blob/master/bin/sweep
 ```
+Please use the appropriate binary for your OS
 
 ## Usage
 
