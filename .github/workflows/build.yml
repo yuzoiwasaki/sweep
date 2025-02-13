@@ -7,7 +7,6 @@ on:
     paths:
       - '**.go'
       - 'go.mod'
-      - 'go.sum'
 
 permissions:
   contents: write
